@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #ffeafe;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,8 +10,22 @@ body {
     height: 100vh;
 }
 
-.container {
+.center-text {
     text-align: center;
+    position: absolute;
+    top: 20%; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+#muiskText {
+    font-size: 24px;
+    color: #ff69b4;
+    text-align: center;
+    margin-top: 10px;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+    top: -20px; /* Move it up */
 }
 
 .floating-image img {
